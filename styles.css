@@ -1,0 +1,100 @@
+/******************************mise en page du texte******************************/
+body {
+    font-family: 'Raleway', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: blue;
+}
+ul {
+    list-style: none;
+    text-align: left;
+}
+
+/*******************************mise en page des blocs du site*******************************/
+div {
+    display: flex;
+}
+img {
+    object-fit: cover;
+    object-position: 2px 10%;
+
+}
+.container {
+    flex-direction: column;
+    max-width: 90%;
+    margin: auto;
+}
+/******************************* HEADER ******************************/
+.header {
+    flex-direction: column;
+}
+.nav {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    align-content: center;
+}
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+/*****************************Reseach section*****************************/
+.filter {
+    flex-direction: row;
+    align-items: center;
+}
+/******************************accommodation section******************************/
+.accommodation-pic {
+    width: 295px;
+    height: 150px;
+}
+.stars{
+    flex-flow: row nowrap;
+}
+.card-place, .footer-section {
+    flex-flow: column nowrap;
+    align-content: flex-start;
+}
+.accommodation {
+    flex-direction: column;
+    max-width: 70%;
+    justify-content: space-around;
+
+}
+.accommodation-options {
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.popular-title {
+    justify-content: space-between;
+}
+.popular-title, .popular, .popular-place {
+    flex-direction: row;
+    align-items: center;
+}
+.popular-place img{
+    width: 128px;
+    height: 135px;
+}
+/******************************activities******************************/
+.activities{
+    flex-direction: column;
+}
+.activities-options {
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.activities-options img {
+    width: 295px;
+}
+
+
+/*******************************Footer*******************************/
+.footer {
+    justify-content: space-around;
+}
