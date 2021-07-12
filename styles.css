@@ -1,4 +1,4 @@
-/*mise en page du texte*/
+/******************************mise en page du texte******************************/
 body {
     font-family: 'Raleway', sans-serif;
 }
@@ -10,16 +10,20 @@ a:hover {
     color: blue;
 }
 
-/*mise en page des blocs du site*/
+
+/*******************************mise en page des blocs du site*******************************/
 div {
     display: flex;
+}
+img {
+    object-fit: cover;
 }
 .container {
     flex-direction: column;
     max-width: 90%;
     margin: auto;
 }
-/* HEADER */
+/******************************* HEADER ******************************/
 .header {
     flex-direction: column;
 }
@@ -34,14 +38,15 @@ div {
     list-style: none;
 }
 
-/*Reseach section*/
+/*****************************Reseach section*****************************/
 .filter {
     flex-direction: row;
     align-items: center;
 }
-/*accommodation section*/
+/******************************accommodation section******************************/
 .accommodation-pic {
-    width: 300px;
+    width: 295px;
+    height: 150px;
 }
 .stars{
     flex-flow: row nowrap;
@@ -57,20 +62,26 @@ div {
 .accommodation-options {
     flex-flow: row wrap;
 }
-.popular {
+.popular-title {
+       justify-content: space-between;
+}
+.popular-title, .popular, .popular-place {
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
 }
-
-/*activities*/
+.popular-place img{
+    width: 128px;
+    height: 135px;
+}
+/******************************activities******************************/
 .activities-options {
     flex-flow: row wrap;
 }
 .activities{
     flex-direction: column;
 }
-/*Footer*/
+
+/*******************************Footer*******************************/
 .footer {
     justify-content: space-around;
 }
