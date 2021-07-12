@@ -9,7 +9,10 @@ a {
 a:hover {
     color: blue;
 }
-
+ul {
+    list-style: none;
+    text-align: left;
+}
 
 /*******************************mise en page des blocs du site*******************************/
 div {
@@ -17,6 +20,8 @@ div {
 }
 img {
     object-fit: cover;
+    object-position: 2px 10%;
+
 }
 .container {
     flex-direction: column;
@@ -58,12 +63,15 @@ img {
 .accommodation {
     flex-direction: column;
     max-width: 70%;
+    justify-content: space-around;
+
 }
 .accommodation-options {
     flex-flow: row wrap;
+    justify-content: space-around;
 }
 .popular-title {
-       justify-content: space-between;
+    justify-content: space-between;
 }
 .popular-title, .popular, .popular-place {
     flex-direction: row;
@@ -74,12 +82,17 @@ img {
     height: 135px;
 }
 /******************************activities******************************/
-.activities-options {
-    flex-flow: row wrap;
-}
 .activities{
     flex-direction: column;
 }
+.activities-options {
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.activities-options img {
+    width: 295px;
+}
+
 
 /*******************************Footer*******************************/
 .footer {
