@@ -1,6 +1,7 @@
 /******************************mise en page du texte******************************/
 body {
     font-family: 'Raleway', sans-serif;
+    margin: 0px;
 }
 a {
     text-decoration: none;
@@ -8,6 +9,8 @@ a {
 }
 a:hover {
     color: blue;
+    text-decoration:none;
+    font-style: normal;
 }
 ul {
     list-style: none;
@@ -37,10 +40,30 @@ img {
     flex-flow: nowrap row;
     justify-content: space-between;
     align-content: center;
+    /*padding: 1.1em;*/
+}
+.nav li a:hover, .nav li a:focus, .nav li a:active, .nav p a:hover, {
+    color: pink ;
+    color: blue;
+    border-top: 2px solid blue;
+    padding-top: 0.2em;
+    background-color: 
 }
 .nav ul {
     display: flex;
     list-style: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 50px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+.nav li {
+    padding: 1.9em 1em 1em 1em;
+}
+.nav p {
+    padding: 1em;
+    color: blue;
 }
 
 /*****************************Reseach section*****************************/
