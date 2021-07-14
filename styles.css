@@ -8,7 +8,7 @@ a {
     color: black;
 }
 a:hover {
-    color: blue;
+    color:  #0065FC;
     text-decoration:none;
     font-style: normal;
 }
@@ -16,20 +16,35 @@ ul {
     list-style: none;
     text-align: left;
 }
+h1 {
+    margin: 0.5em 0em 0.3em 0em;
+    color: black;
+    font-size: 2em;
+}
+p, .filter p {
+    margin-block-start: 0.2em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 
 /*******************************mise en page des blocs du site*******************************/
 div {
     display: flex;
 }
-img {
+/*img {
     object-fit: cover;
     object-position: 2px 10%;
 
-}
+}*/
 .container {
     flex-direction: column;
     max-width: 90%;
     margin: auto;
+}
+i, span {
+    color:  #0065FC;
+    background-color: #DEEBFF;
 }
 /******************************* HEADER ******************************/
 .header {
@@ -39,37 +54,64 @@ img {
     display: flex;
     flex-flow: nowrap row;
     justify-content: space-between;
-    align-content: center;
-    /*padding: 1.1em;*/
 }
-.nav li a:hover, .nav li a:focus, .nav li a:active, .nav p a:hover {
-    color: blue;
-    border-top: 2px solid blue;
-    padding-top: 0.2em;
-    background-color: black;
+.nav img {
+    margin-top: 2em;
+}
+.nav li a:hover, .nav li a:focus, .nav li a:active, .nav p a a:hover {
+    color:  #0065FC;
+    border-top: 2px solid  #0065FC;
+    padding-top: 2.3em;
 }
 .nav ul {
     display: flex;
+    align-items: baseline;
     list-style: none;
     margin-block-start: 0px;
     margin-block-end: 0px;
-    margin-inline-start: 50px;
+    margin-inline-start: 30px;
     margin-inline-end: 0px;
     padding-inline-start: 0px;
 }
 .nav li {
-    padding: 1.9em 1em 1em 1em;
+    padding: 2.5em;
 }
 .nav p {
-    padding: 1em;
-    color: blue;
+    color:  #0065FC;
+    padding: 2.5em;
 }
-
 /*****************************Reseach section*****************************/
+form {
+    margin-top: 1em;
+}
+.research i {
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 0.9em 0em 0em 0.9em;
+    padding: 0.7em;
+}
+.fa-map-marker-alt{
+    color: black;
+}
+.research input {
+    border: 1px solid #F2F2F2;
+    padding: 0.8em ;
+}
+.research button {
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0em 0.9em 0.9em 0em;
+    padding: 0.8em;
+    margin-top: 0em;
+    color: #ffffff;
+    font-weight: 500;
+}
 .filter {
     flex-direction: row;
     align-items: center;
+    margin-top: 1em;
 }
+
 /******************************accommodation section******************************/
 .accommodation-pic {
     width: 295px;
