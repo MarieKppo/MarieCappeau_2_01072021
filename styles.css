@@ -42,12 +42,11 @@ img {
     align-content: center;
     /*padding: 1.1em;*/
 }
-.nav li a:hover, .nav li a:focus, .nav li a:active, .nav p a:hover, {
-    color: pink ;
+.nav li a:hover, .nav li a:focus, .nav li a:active, .nav p a:hover {
     color: blue;
     border-top: 2px solid blue;
     padding-top: 0.2em;
-    background-color: 
+    background-color: black;
 }
 .nav ul {
     display: flex;
