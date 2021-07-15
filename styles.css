@@ -25,7 +25,6 @@ h2 {
     margin: 0.3em 0em 0.5em 0em;
     color: black;
     font-size: 1.4em;  
-    padding-left: 2em; 
 }
 h3 {
     margin: 0.3em 0em 0em 0em;
@@ -154,6 +153,9 @@ form {
 .accommodation {
     justify-content: space-between;
 }
+.accommodation h2 {
+    padding-left: 2em; 
+}
 .all-accommodation {
     flex-flow: column nowrap;
     justify-content: space-around;
@@ -175,7 +177,7 @@ form {
     border-radius: 1.5em;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
 }
-a:hover .all-accommodation-card, a:hover .popular {
+a:hover .all-accommodation-card, a:hover .popular, a:hover .activities-card-place {
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 60%);
 }
 .accommodation-pic {
@@ -214,6 +216,7 @@ a:hover .all-accommodation-card, a:hover .popular {
 .popular-title {
     float: right;
     padding-right: 2em;
+    color: black;
 }
 .popular {
     justify-content:start;
@@ -243,16 +246,31 @@ a:hover .all-accommodation-card, a:hover .popular {
 /******************************activities******************************/
 .activities{
     flex-direction: column;
+    margin: 2em 0em 2em 0em;
 }
 .activities-options {
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-.activities-options img {
-    width: 295px;
+.activities-card-place {
+    border-radius: 1.5em;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
 }
-
-
+.activities-pic {
+    width: 19em;
+    height: auto;
+    border-radius: 1.5em 1.5em 0em 0em ;
+    object-fit: cover;
+}
+.act1{
+    height: 24em;
+}
+.act2 {
+    height: 12em;
+}
+.act3 {
+    height: 8em;
+}
 /*******************************Footer*******************************/
 .footer {
     justify-content: space-around;
