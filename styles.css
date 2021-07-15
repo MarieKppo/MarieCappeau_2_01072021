@@ -7,7 +7,7 @@ a {
     text-decoration: none;
     color: black;
 }
-a:hover {
+a:hover, a:hover h3 {
     color:  #0065FC;
     text-decoration:none;
     font-style: normal;
@@ -21,14 +21,21 @@ h1 {
     color: black;
     font-size: 2em;
 }
+h2 {
+    display: block;
+    margin: 0.3em 0em 1.3em 0em;
+    color: black;
+    font-size: 1.4em;  
+    padding-left:2em; 
+}
 h3 {
-    margin: 0.5em 0em 0.1em 0em;
+    margin: 0.3em 0em 0em 0em;
     color: black;
     font-size: 1em;
 }
 p {
     font-size: 0.8em;
-    margin: 0em;
+    margin: 0em 0em 0em 0.1em;
 }
 /*******************************mise en page des blocs du site*******************************/
 div {
@@ -60,7 +67,7 @@ i, span {
 .nav img {
     margin-top: 2em;
 }
-.nav li a:hover, .nav li a:focus, .nav li a:active, .nav p a a:hover {
+.nav li a:hover, .nav li a:focus, .nav li a:active, .nav strong a a:hover {
     color:  #0065FC;
     border-top: 2px solid  #0065FC;
     padding: 2.3em 0.5em 0em 0.5em;
@@ -78,9 +85,8 @@ i, span {
 .nav li {
     padding: 2.5em;
 }
-.nav p {
+.nav strong {
     color:  #0065FC;
-    padding: 2.5em;
 }
 /*****************************Reseach section*****************************/
 form {
@@ -147,9 +153,61 @@ form {
 }
 /******************************accommodation section******************************/
 .accommodation {
-    flex-direction: row;
+    justify-content: space-between;
 }
-.all-accommodation, .popular-accommodation {
+.all-accommodation {
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+    border-radius: 1em;
+    padding: 2em 0em 2.5em 0em;
+    max-width: 65%;
+}
+.accommodation-options {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.all-accommodation-card {
+    flex-flow: column nowrap;
+    background-color: #fff;
+    margin-bottom: 2em;
+    border: 4px solid #ffffff;
+    border-radius: 1.5em;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+}
+a:hover .all-accommodation-card {
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 60%);
+}
+.accommodation-pic {
+   width: 15em;
+   height: 6em;
+   border-radius: 1.5em 1.5em 0em 0em;
+   object-fit: cover;
+}
+.all-accommodation-card h3, .all-accommodation-card p, .all-accommodation-card .stars {
+    padding: 0.2em 0em 0.3em 0.5em;
+}
+.stars{
+    flex-flow: row nowrap;
+    color: #0065FC;
+    padding: 0.2em 0em 0.3em 0em;
+}
+.stars .far, .stars .fas {
+    font-size: 0.75em;
+}
+.grey {
+    color: #DEEBFF;
+}
+.showmore {
+    padding: 0em 3em;
+    font-size: 1.1em;
+}
+.popular-card-place, .activities-card-place, .footer-section {
+    flex-flow: column nowrap;
+    align-content: flex-start;
+}
+.popular-accommodation {
     flex-flow: column nowrap;
     justify-content: space-around;
     background-color: #F2F2F2;
@@ -157,44 +215,6 @@ form {
     padding: 1.5em;
     margin: 1em 0em 0em 0em;
 }
-.all-accommodation {
-    max-width: 65%;
-    margin-right: 2em;
-}
-.accommodation-options {
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-.all-accommodation-card {
-    flex-flow: column nowrap;
-    background-color: #fff;
-    margin: 1em;
-    border: 2px solid #ffffff;
-    border-radius: 2em;
-}
-a:hover .all-accommodation-card {
-    box-shadow: 10px 10px black;
-}
-.accommodation-pic {
-   width: 15em;
-   height: 9em;
-   border-radius: 2em 2em 0em 0em;
-   object-fit: cover;
-}
-.accommodation-card-place {
-    padding: 0.2em 0.3em 1em 0.5em;
-    border-radius: 0em 0em 2em 2em;
-}
-.stars{
-    flex-flow: row nowrap;
-    color: #0065FC;
-    padding-bottom: 0.2em;
-}
-.accommodation-card-place, .popular-card-place, .activities-card-place, .footer-section {
-    flex-flow: column nowrap;
-    align-content: flex-start;
-}
-
 .popular-title {
     justify-content: space-between;
 }
