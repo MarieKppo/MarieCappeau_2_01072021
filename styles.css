@@ -21,13 +21,15 @@ h1 {
     color: black;
     font-size: 2em;
 }
-p, .filter p {
-    margin-block-start: 0.2em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+h3 {
+    margin: 0.5em 0em 0.1em 0em;
+    color: black;
+    font-size: 1em;
 }
-
+p {
+    font-size: 0.8em;
+    margin: 0em;
+}
 /*******************************mise en page des blocs du site*******************************/
 div {
     display: flex;
@@ -44,7 +46,7 @@ div {
 }
 i, span {
     color:  #0065FC;
-    background-color: #DEEBFF;
+    /*background-color: #DEEBFF;*/
 }
 /******************************* HEADER ******************************/
 .header {
@@ -61,7 +63,7 @@ i, span {
 .nav li a:hover, .nav li a:focus, .nav li a:active, .nav p a a:hover {
     color:  #0065FC;
     border-top: 2px solid  #0065FC;
-    padding-top: 2.3em;
+    padding: 2.3em 0.5em 0em 0.5em;
 }
 .nav ul {
     display: flex;
@@ -112,6 +114,12 @@ form {
     align-content: space-around;
     margin: 1em 0em 1em 0em;
 }
+.filter p {
+    margin-block-start: 0.2em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 .filter button {
     border: 2px solid #F2F2F2 ;
     border-radius: 2.5em;
@@ -124,6 +132,7 @@ form {
     border-radius: 50% ;
     padding: 1.2em;
     margin: 0em 0.5em 0em -1em;
+    background-color: #DEEBFF ;
 }
 .filter button a:hover i {
     background-color: #0065FC;
@@ -137,8 +146,11 @@ form {
     background-color: #0065FC;
 }
 /******************************accommodation section******************************/
+.accommodation {
+    flex-direction: row;
+}
 .all-accommodation, .popular-accommodation {
-    flex-direction: column;
+    flex-flow: column nowrap;
     justify-content: space-around;
     background-color: #F2F2F2;
     border-radius: 1em;
@@ -149,17 +161,34 @@ form {
     max-width: 65%;
     margin-right: 2em;
 }
-
 .accommodation-options {
     flex-flow: row wrap;
     justify-content: space-around;
 }
+.all-accommodation-card {
+    flex-flow: column nowrap;
+    background-color: #fff;
+    margin: 1em;
+    border: 2px solid #ffffff;
+    border-radius: 2em;
+}
+a:hover .all-accommodation-card {
+    box-shadow: 10px 10px black;
+}
 .accommodation-pic {
-    width: 295px;
-    height: 150px;
+   width: 15em;
+   height: 9em;
+   border-radius: 2em 2em 0em 0em;
+   object-fit: cover;
+}
+.accommodation-card-place {
+    padding: 0.2em 0.3em 1em 0.5em;
+    border-radius: 0em 0em 2em 2em;
 }
 .stars{
     flex-flow: row nowrap;
+    color: #0065FC;
+    padding-bottom: 0.2em;
 }
 .accommodation-card-place, .popular-card-place, .activities-card-place, .footer-section {
     flex-flow: column nowrap;
