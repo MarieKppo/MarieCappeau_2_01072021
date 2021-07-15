@@ -22,11 +22,10 @@ h1 {
     font-size: 2em;
 }
 h2 {
-    display: block;
-    margin: 0.3em 0em 1.3em 0em;
+    margin: 0.3em 0em 0.5em 0em;
     color: black;
     font-size: 1.4em;  
-    padding-left:2em; 
+    padding-left: 2em; 
 }
 h3 {
     margin: 0.3em 0em 0em 0em;
@@ -48,7 +47,7 @@ div {
 }*/
 .container {
     flex-direction: column;
-    max-width: 90%;
+    max-width: 85%;
     margin: auto;
 }
 i, span {
@@ -161,7 +160,7 @@ form {
     background-color: #F2F2F2;
     border-radius: 1em;
     padding: 2em 0em 2.5em 0em;
-    max-width: 65%;
+    max-width: 879px;
 }
 .accommodation-options {
     flex-flow: row wrap;
@@ -176,7 +175,7 @@ form {
     border-radius: 1.5em;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
 }
-a:hover .all-accommodation-card {
+a:hover .all-accommodation-card, a:hover .popular {
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 60%);
 }
 .accommodation-pic {
@@ -203,28 +202,43 @@ a:hover .all-accommodation-card {
     padding: 0em 3em;
     font-size: 1.1em;
 }
-.popular-card-place, .activities-card-place, .footer-section {
-    flex-flow: column nowrap;
-    align-content: flex-start;
-}
 .popular-accommodation {
     flex-flow: column nowrap;
-    justify-content: space-around;
+    align-content: center;
     background-color: #F2F2F2;
     border-radius: 1em;
-    padding: 1.5em;
-    margin: 1em 0em 0em 0em;
+    margin: 0em;
+    padding: 2em 0em 2.5em 0em;
+    max-width: 420px;
 }
 .popular-title {
-    justify-content: space-between;
+    float: right;
+    padding-right: 2em;
 }
-.popular-title, .popular, .popular-place {
-    flex-direction: row;
-    align-items: center;
+.popular {
+    justify-content:start;
+    align-items: flex-start;
+    background-color: #fff;
+    margin: 1em 2em 1em 2em;
+    border: 4px solid #ffffff;
+    border-radius: 1.5em;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+    padding: 0em 2em 0em 0em;
 }
-.popular-place img{
-    width: 128px;
-    height: 135px;
+.popular-pic {
+    width: 8em;
+    height: 8em;
+    border-radius: 1.5em 0em 0em 1.5em;
+    object-fit: cover;
+}
+.popular-card-place h3, .popular-card-place p, .popular-card-place .stars {
+    padding-left: 1em;
+}
+.popular-card-place .stars {
+    margin-top: 3em;
+}
+.popular-card-place, .activities-card-place, .footer-section {
+    flex-flow: column nowrap;
 }
 /******************************activities******************************/
 .activities{
