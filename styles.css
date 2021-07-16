@@ -249,28 +249,68 @@ a:hover .all-accommodation-card, a:hover .popular, a:hover .activities-card-plac
     margin: 2em 0em 2em 0em;
 }
 .activities-options {
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    margin: 0.5em 0em 0.5em 0em;
+    height: 30em;
 }
 .activities-card-place {
+    margin: 0.3em;
+    width: 18em;
     border-radius: 1.5em;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
 }
 .activities-pic {
-    width: 19em;
-    height: auto;
     border-radius: 1.5em 1.5em 0em 0em ;
     object-fit: cover;
 }
-.act1{
+.xl-pic {
     height: 24em;
 }
-.act2 {
+.m-pic {
     height: 12em;
 }
-.act3 {
+.s-pic {
+    height: 10em;
+}
+.xs-pic {
     height: 8em;
 }
+.activities-card-place h3 {
+    padding: 1em;
+}
+/*******************dPropriétés grid child "activities card place"*********************************
+.grid { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2%;
+    align-content: center;
+}
+.act1 { 
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+.act2 {
+    grid-column-start: 2;
+    grid-row: 1;
+}
+.act3 {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+.act4 {
+    grid-column: 4;
+    grid-row: 1;
+}
+.act5 {
+    grid-column: 2;
+    grid-row: 2;
+}
+.act6 {
+    grid-column: 4;
+    grid-row: 2;
+}*/
 /*******************************Footer*******************************/
 .footer {
     justify-content: space-around;
