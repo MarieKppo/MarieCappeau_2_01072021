@@ -139,7 +139,7 @@ form {
     margin: 0em 0.5em 0em -1em;
     background-color: #DEEBFF ;
 }
-.filter button a:hover i {
+.filter button:hover i, .filter button:hover {
     background-color: #0065FC;
     color:#DEEBFF;
     /*box-shadow: 1em 0em #0065FC;*/
