@@ -2,34 +2,57 @@
 body {
     font-family: 'Raleway', sans-serif;
     margin: 0px;
+    font-size: 1em;
 }
 a {
     text-decoration: none;
     color: black;
 }
-a:hover {
-    color: blue;
+a:hover, a:hover h3 {
+    color:  #0065FC;
     text-decoration:none;
     font-style: normal;
 }
 ul {
     list-style: none;
     text-align: left;
+    padding: 0em;
 }
-
+h1 {
+    margin: 0.5em 0em 0.3em 0em;
+    color: black;
+    font-size: 2em;
+}
+h2 {
+    margin: 0.3em 0em 0.5em 0em;
+    color: black;
+    font-size: 1.4em;  
+}
+h3 {
+    margin: 0.3em 0em 0em 0em;
+    color: black;
+    font-size: 1em;
+}
+p {
+    margin: 0em 0em 0em 0.1em;
+}
 /*******************************mise en page des blocs du site*******************************/
 div {
     display: flex;
 }
-img {
+/*img {
     object-fit: cover;
     object-position: 2px 10%;
 
-}
+}*/
 .container {
     flex-direction: column;
-    max-width: 90%;
+    max-width: 85%;
     margin: auto;
+}
+i, span {
+    color:  #0065FC;
+    /*background-color: #DEEBFF;*/
 }
 /******************************* HEADER ******************************/
 .header {
@@ -39,84 +62,244 @@ img {
     display: flex;
     flex-flow: nowrap row;
     justify-content: space-between;
-    align-content: center;
-    /*padding: 1.1em;*/
 }
-.nav li a:hover, .nav li a:focus, .nav li a:active, .nav p a:hover {
-    color: blue;
-    border-top: 2px solid blue;
-    padding-top: 0.2em;
-    background-color: black;
+.nav img {
+    margin-top: 2em;
+}
+.nav li a:hover, .nav strong a a:hover {
+    color:  #0065FC;
+    border-top: 2px solid  #0065FC;
+    padding: 2.3em 0.5em 0em 0.5em;
 }
 .nav ul {
     display: flex;
+    align-items: baseline;
     list-style: none;
     margin-block-start: 0px;
     margin-block-end: 0px;
-    margin-inline-start: 50px;
+    margin-inline-start: 30px;
     margin-inline-end: 0px;
     padding-inline-start: 0px;
 }
 .nav li {
-    padding: 1.9em 1em 1em 1em;
+    padding: 2.5em;
 }
-.nav p {
-    padding: 1em;
-    color: blue;
+.nav strong {
+    color:  #0065FC;
 }
-
 /*****************************Reseach section*****************************/
+form {
+    margin-top: 2em;
+}
+.research i {
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 0.9em 0em 0em 0.9em;
+    padding: 0.7em;
+}
+.fa-map-marker-alt{
+    color: black;
+}
+.research input {
+    border: 1px solid #F2F2F2;
+    padding: 0.8em ;
+}
+.research button {
+    background-color: #0065FC;
+    border: 1px solid #0065FC;
+    border-radius: 0em 0.9em 0.9em 0em;
+    padding: 0.8em;
+    margin-top: 0em;
+    color: #ffffff;
+    font-weight: 500;
+}
 .filter {
-    flex-direction: row;
+    flex-flow: row wrap;
     align-items: center;
+    align-content: space-around;
+    margin: 1em 0em 1em 0em;
+}
+.filter p {
+    margin-block-start: 0.2em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.filter button {
+    border: 2px solid #F2F2F2 ;
+    border-radius: 2.5em;
+    background-color: #ffffff;
+    margin: 1em 2em 1em 2em;
+    padding: 0em 1em 0em 0em;
+}
+.filter button i {
+    width: 15px;
+    border-radius: 50% ;
+    padding: 1.2em;
+    margin: 0em 0.5em 0em -1em;
+    background-color: #DEEBFF ;
+}
+.filter button a:hover i {
+    background-color: #0065FC;
+    color:#DEEBFF;
+    /*box-shadow: 1em 0em #0065FC;*/
+}
+.fa-info-circle {
+    margin-right: 0.5em;
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: #0065FC;
 }
 /******************************accommodation section******************************/
-.accommodation-pic {
-    width: 295px;
-    height: 150px;
-}
-.stars{
-    flex-flow: row nowrap;
-}
-.card-place, .footer-section {
-    flex-flow: column nowrap;
-    align-content: flex-start;
-}
 .accommodation {
-    flex-direction: column;
-    max-width: 70%;
-    justify-content: space-around;
-
+    justify-content: space-between;
+    margin: 1em 0em;
+}
+.accommodation h2 {
+    padding-left: 2em; 
+}
+.all-accommodation {
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    background-color: #F2F2F2;
+    border-radius: 1em;
+    max-width: 879px;
 }
 .accommodation-options {
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.all-accommodation-card {
+    flex-flow: column nowrap;
+    background-color: #fff;
+    margin-bottom: 2em;
+    border: 4px solid #ffffff;
+    border-radius: 1.5em;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+}
+a:hover .all-accommodation-card, a:hover .popular, a:hover .activities-card-place {
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 60%);
+}
+.accommodation-pic {
+   width: 15em;
+   height: 6em;
+   border-radius: 1.5em 1.5em 0em 0em;
+   object-fit: cover;
+}
+.all-accommodation-card h3, .all-accommodation-card p, .all-accommodation-card .stars {
+    padding: 0.2em 0em 0.3em 0.5em;
+}
+.stars{
+    flex-flow: row nowrap;
+    color: #0065FC;
+    padding: 0.2em 0em 0.3em 0em;
+}
+.stars .far, .stars .fas {
+    font-size: 0.75em;
+}
+.grey {
+    color: #DEEBFF;
+}
+.showmore {
+    padding: 0em 3em;
+    font-size: 1.1em;
+}
+.popular-card-place p, .all-accommodation-card p {
+    font-size: 0.8em;
+}
+.popular-accommodation {
+    flex-flow: column nowrap;
+    align-content: center;
+    background-color: #F2F2F2;
+    border-radius: 1em;
+    margin: 0em;
+    padding: 2em 0em 2.5em 0em;
+    max-width: 420px;
 }
 .popular-title {
-    justify-content: space-between;
+    float: right;
+    padding-right: 2em;
+    color: black;
 }
-.popular-title, .popular, .popular-place {
-    flex-direction: row;
-    align-items: center;
+.popular {
+    justify-content:start;
+    align-items: flex-start;
+    background-color: #fff;
+    margin: 1em 2em 1em 2em;
+    border: 4px solid #ffffff;
+    border-radius: 1.5em;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+    padding: 0em 2em 0em 0em;
 }
-.popular-place img{
-    width: 128px;
-    height: 135px;
+.popular-pic {
+    width: 8em;
+    height: 8em;
+    border-radius: 1.5em 0em 0em 1.5em;
+    object-fit: cover;
+}
+.popular-card-place h3, .popular-card-place p, .popular-card-place .stars {
+    padding-left: 1em;
+}
+.popular-card-place .stars {
+    margin-top: 3em;
+}
+.popular-card-place, .activities-card-place, .footer-section {
+    flex-flow: column nowrap;
 }
 /******************************activities******************************/
 .activities{
     flex-direction: column;
+    margin: 1em 0em ;
 }
 .activities-options {
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    margin: 0.5em 0em 0.5em 0em;
+    height: 30em;
 }
-.activities-options img {
-    width: 295px;
+.activities-card-place {
+    margin: 0.3em;
+    width: 18em;
+    border-radius: 1.5em;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
 }
-
-
+.activities-pic {
+    border-radius: 1.5em 1.5em 0em 0em ;
+    object-fit: cover;
+}
+.xl-pic {
+    height: 24em;
+}
+.m-pic {
+    height: 12em;
+}
+.s-pic {
+    height: 10em;
+}
+.xs-pic {
+    height: 8em;
+}
+.activities-card-place h3 {
+    padding: 1em;
+}
 /*******************************Footer*******************************/
+#footer {
+    background-color: #F2F2F2 ;
+}
 .footer {
-    justify-content: space-around;
+    width: 85%;
+    margin: auto;
+    display: flex;
+}
+.footer-section {
+    width: 33%;
+}
+.footer-section p {
+    margin: 1em 0em 0.3em 0em;
+    font-size: 1.1em;
+}
+.footer-section li {
+    padding-bottom: 0.6em;
 }
