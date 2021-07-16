@@ -1,6 +1,6 @@
 /******************************mise en page du texte******************************/
 h1 {
-    font-size: 2em;
+    font-size: 3em;
 }
 h2 {
     margin: 0.3em 0em 0.5em 0em;
@@ -27,31 +27,16 @@ i, span {
 .nav {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: stretch;
 }
-.nav img {
-    margin-top: 2em;
-}
-.nav li a:hover, .nav strong a a:hover {
+.nav li a:hover, .nav strong a:hover {
     color:  #0065FC;
-    border-top: 2px solid  #0065FC;
-    padding: 2.3em 0.5em 0em 0.5em;
-}
-.nav ul {
-    display: flex;
-    align-items: baseline;
-    list-style: none;
-    margin-block-start: 0px;
-    margin-block-end: 0px;
-    margin-inline-start: 30px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
+    border-bottom: 2px solid  #0065FC;
+    padding:  0em;
 }
 .nav li {
-    padding: 2.5em;
-}
-.nav strong {
-    color:  #0065FC;
+    padding: 2em;
+    border-bottom: 2px solid #DEEBFF;
 }
 /*****************************Reseach section*****************************/
 form {

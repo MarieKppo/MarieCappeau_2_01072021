@@ -76,10 +76,10 @@ i, span {
     margin-inline-end: 0px;
     padding-inline-start: 0px;
 }
-.nav li {
+.nav li, .nav p {
     padding: 2.5em;
 }
-.nav strong {
+.nav p {
     color:  #0065FC;
 }
 /*****************************Reseach section*****************************/
