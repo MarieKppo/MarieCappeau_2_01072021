@@ -208,7 +208,7 @@ a:hover .all-accommodation-card, a:hover .popular, a:hover .activities-card-plac
     background-color: #F2F2F2;
     border-radius: 1em;
     margin: 0em;
-    padding: 2em 0em 2.5em 0em;
+    padding: 2em 0em 2.5em 1em;
     max-width: 420px;
 }
 .popular-title {
