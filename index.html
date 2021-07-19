@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 <html lang=fr>
 <head>
-
+	<meta charset="utf-8" />
 	<title>Reservia</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Reservia" content="Réservez vos vacances de rêves avec Reservia" />
+	<!--feuilles de style-->
+	<link rel="stylesheet" href="styles.css" /><!--for all screens-->
+	<link rel="stylesheet" media=" all and (max-width: 767px)" href="small.css" /><!--for smartphones-->
 
-		<meta name="Reservia" content="Réservez vos vacances de rêves avec Reservia" />
-		<!-- Twitter Card data -->
-		<!--meta name="twitter:card" value="summary"-->
-		<!-- Open Graph data -->
-		<meta property="og:title" content="Title Here" />
-		<meta property="og:type" content="article" />
-		<meta property="og:url" content="http://www.example.com/" />
-		<meta property="og:image" content="http://example.com/image.jpg" />
-		<meta property="og:description" content="Trouvez votre hébergement pour des vacances de rêves" />
-		<!--feuille de style-->
-		<link rel="stylesheet" href="styles.css" />
-		<!--ajout l'import des polices-->
-		<!--lien font awesome-->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-		<script src="https://kit.fontawesome.com/c4888e540e.js" crossorigin="anonymous"></script>
-		<!--ajouter lien grille bootstrap-->		
+
+	<!--lien font awesome et polices-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/c4888e540e.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="container">
 <!---------------------------------------------Header--------------------------------------------->
     <header>
-		<div class="nav">
-			<a href="#" title="Reservia, trouvez votre hébergement pour des vacances de rêves">
-				<img src="images/logo/Reservia.svg" alt="logo Reservia" />
-			</a>
-		<nav class="nav">
-			<ul>
-				<li><a href="#accommodation">Hébergements</a></li>
-				<li><a href="#activities">Activités</a></li>
-				<li><a href="#inscription" class="inscription"><strong>S'inscrire</strong></a></li>
-			</ul>
-		</nav>
-		</div>
 		<div class="header">
+			<div class="nav">
+				<a href="#" title="Reservia, trouvez votre hébergement pour des vacances de rêves">
+					<img src="images/logo/Reservia.svg" alt="logo Reservia" />
+				</a>
+			</div>
+			<div class="nav nav-ul">
+			<nav class="nav">
+				<ul>
+					<li><a href="#accommodation">Hébergements</a></li>
+					<li><a href="#activities">Activités</a></li>
+				</ul>
+			</nav>
+			<p><a href="#inscription" class="inscription"><strong>S'inscrire</strong></a></p>
+			</div>
+		</div>
+		<div class="title">
 			<h1>Trouver votre hébergement pour des vacances de rêves</h1>
 			<p>En plein centre ville ou en pleine nature</p>
 		</div>
     </header>
 <!---------------------------------------------Reseach section--------------------------------------------->
-    <section id="recherche">
+    <section>
 		<div class="research">
 			<form class="research">
 				<div class="research">
@@ -56,31 +54,27 @@
 			</form>
 		</div>
 <!--filters - à mettre en ligne version desktop-->
-		<div class="filter">
-			<p><strong>Filtres</strong></p>
-			<button>
-				<a href="#" title="filter économique">
+		<div class="filter-content">
+			<div class="filter">
+				<p class="filter"><strong>Filtres</strong></p>
+			</div>
+			<div class="filter">
+				<button>
 					<i class="fas fa-money-bill-wave"></i>Economique
-				</a>
-			</button>
-			<button>
-				<a href="#" title="filter familial">
+				</button>
+				<button>
 					<i class="fas fa-child"></i>Familial
-				</a>
-			</button>
-			<button>
-				<a href="#" title="filter romantique">
-					<i class="fas fa-heart"></i>Romantique
-				</a>
-			</button>
-			<button>
-				<a href="#" title="filter animaux autorisés">
-					<i class="fas fa-dog"></i>Animaux autorisés
-				</a>
-			</button>
+				</button>
+				<button>
+						<i class="fas fa-heart"></i>Romantique
+				</button>
+				<button>
+						<i class="fas fa-dog"></i>Animaux autorisés
+				</button>
+			</div>
 		</div>
 <!--info line - à mettre en ligne version desktop-->
-		<div class="filter">
+		<div class="filter small">
 			<i class="fas fa-info-circle"></i><p>Plus de 500 logements sont disponibles dans cette ville.</p>
     	</div>
 	</section>
@@ -236,7 +230,7 @@
 </div>
 <!---------------------------------------------footer--------------------------------------------->
     <footer id="footer">
-      <div class="footer"><!-- div row-->
+      <div class="footer">
 		<!--about-->
 		<div class="footer-section">
 			<p><strong>À propos</strong></p>
