@@ -66,7 +66,7 @@ i, span {
 .nav li:hover {
     color:  #0065FC;
     border-top: 2px solid  #0065FC;
-    padding: 2.3em 0.5em 0em 0.5em;
+    padding: 2.3em 2.5em 0em 2.5em;
 }
 .nav ul {
     display: flex;
@@ -91,20 +91,18 @@ i, span {
 form {
     margin-top: 2em;
 }
-.research i {
+.fa-map-marker-alt{
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
     border-radius: 0.9em 0em 0em 0.9em;
     padding: 0.7em;
-}
-.fa-map-marker-alt{
     color: black;
 }
 .research input {
     border: 1px solid #F2F2F2;
     padding: 0.8em ;
 }
-.research button {
+.research-text-button, .research-icon-button {
     background-color: #0065FC;
     border: 1px solid #0065FC;
     border-radius: 0em 0.9em 0.9em 0em;
@@ -112,6 +110,12 @@ form {
     margin-top: 0em;
     color: #ffffff;
     font-weight: 500;
+}
+.research-icon-button{
+    display: none;
+}
+.fa-search {
+    color: #F2F2F2;
 }
 .filter-content{
     flex-flow: row wrap;
@@ -168,7 +172,6 @@ form {
     border-radius: 1em;
     max-width: 879px;
     padding-top: 2em;
-
 }
 .accommodation-options {
     flex-flow: row wrap;
@@ -287,7 +290,7 @@ a:hover .all-accommodation-card, a:hover .popular, a:hover .activities-card-plac
 .xs-pic {
     height: 8em;
 }
-.activities-card-place h3 {
+.activities-card-place h3, .activities h2 {
     padding: 1em;
 }
 /*******************************Footer*******************************/

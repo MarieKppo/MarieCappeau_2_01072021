@@ -1,0 +1,136 @@
+.container {
+    flex-direction: column;
+    max-width: 1024px;
+    min-width: 768px;
+    width: auto;
+    margin: auto;
+    padding: 0.5em;
+}
+/******************************* HEADER ******************************/
+.header{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav ul {
+    display: flex;
+    align-items: baseline;
+    list-style: none;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 30px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+.nav li, .nav p {
+    padding: 2.5em;
+}
+.inscription {
+    color:  #0065FC;
+}
+/*****************************Reseach section*****************************/
+form {
+    margin-top: 2em;
+}
+.research i {
+    background-color: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    border-radius: 0.9em 0em 0em 0.9em;
+    padding: 0.7em;
+}
+.fa-map-marker-alt{
+    color: black;
+}
+.research input {
+    border: 1px solid #F2F2F2;
+    padding: 0.8em ;
+}
+.research-text-button {
+    display: none;
+}
+.filter-content{
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: space-around;
+    margin: 1em 0em 1em 0em;
+}
+.filter p {
+    padding-right: 1em;
+    margin-block-start: 0.2em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.filter button {
+    border: 2px solid #F2F2F2 ;
+    border-radius: 2.5em;
+    background-color: #ffffff;
+    margin: 1em 1em 1em 1em;
+    padding: 0em 1em 0em 0em;
+}
+.filter button i {
+    width: 15px;
+    border-radius: 50% ;
+    padding: 1.2em;
+    margin: 0em 0.5em 0em -1em;
+    background-color: #DEEBFF ;
+}
+.filter button:hover {
+    background-color: #0065FC;
+    color:#DEEBFF;
+}
+.filter .small {
+    justify-items: flex-start;
+}
+.fa-info-circle {
+    margin: 0.5em;
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: #0065FC;
+}
+/******************************accommodation section******************************/
+.accommodation {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    margin: 1em 0em;
+}
+.all-accommodation {
+    border-radius: 0em;
+    max-width: 1024px;
+    background-color: #ffffff;
+}
+.all-accommodation-card{
+    margin: 0.5em;
+}
+.accommodation h2, .showmore {
+    padding: 0.5em 0em 1em 2em; 
+}
+.popular-accommodation {
+    border-radius: 0em;
+    max-width: 1024px;
+}
+/******************************activities******************************/
+.activities{
+    flex-direction: column;
+    margin: 1em 0.5em ;
+}
+.activities-options {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    margin: 0.5em 0em 0.5em 0em;
+    height: 100%;
+}
+.xl-pic, .m-pic, .s-pic, .xs-pic {
+    height: 10em;
+    width: 100%;
+}
+/*******************************Footer*******************************/
+.footer {
+    max-width: 1024px;
+    min-width: 768px;
+    width: auto;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0.5em;
+}
