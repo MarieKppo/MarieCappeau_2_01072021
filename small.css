@@ -11,36 +11,28 @@ h3 {
     font-size: 0.9em;
 }
 /******************************* HEADER ******************************/
-.nav img,.title, .filter-content {
-    display: flex;
-    flex-direction: column;
-    margin: 1em;
-    align-items: flex-start;
-}
-.header{
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-.nav {
-    flex-direction: column-reverse;
-    align-items: flex-end;
+.nav img {
+    position: absolute;
 }
 .nav-ul {
-    position: absolute;
-    margin-right: 0em;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    align-content: stretch;
 }
 .nav ul{
     margin-inline-start: 0em;
 }
 .nav li {
-    padding: 1em 3.5em 1em 2.5em;
+    padding:1em;
     border-bottom: 2px solid #DEEBFF;
 }
 .nav li:hover {
     padding: 1em 3.5em 1em 2.5em;
     border-bottom: 2px solid #0065FC;
     border-top: 0em ;
+}
+.nav p:hover {
+    margin-bottom: 2.5em;
 }
 .title{
     position:relative;

@@ -1,17 +1,8 @@
 .container {
     flex-direction: column;
-    max-width: 1024px;
-    min-width: 768px;
-    width: auto;
-    margin: auto;
-    padding: 0.5em;
+    margin: 0px 10px;
 }
 /******************************* HEADER ******************************/
-.header{
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
 .nav ul {
     display: flex;
     align-items: baseline;
@@ -32,8 +23,6 @@
 form {
     margin-top: 2em;
 }
-<<<<<<< HEAD
-=======
 .research i {
     background-color: #F2F2F2;
     border: 1px solid #F2F2F2;
@@ -43,17 +32,13 @@ form {
 .fa-map-marker-alt{
     color: black;
 }
->>>>>>> CssMobile
 .research input {
     border: 1px solid #F2F2F2;
     padding: 0.8em ;
 }
-<<<<<<< HEAD
-=======
 .research-text-button {
     display: none;
 }
->>>>>>> CssMobile
 .filter-content{
     flex-flow: row wrap;
     align-items: center;
@@ -105,32 +90,13 @@ form {
     max-width: 1024px;
     background-color: #ffffff;
 }
-<<<<<<< HEAD
-.all-accommodation-card {
-=======
 .all-accommodation-card{
->>>>>>> CssMobile
     margin: 0.5em;
 }
 .accommodation h2, .showmore {
     padding: 0.5em 0em 1em 2em; 
 }
 .popular-accommodation {
-<<<<<<< HEAD
-    flex-direction: column;
-    border-radius: 0em;
-    max-width: 1024px;
-}
-.popular-options {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-}
-/******************************activities******************************/
-.activities{
-    flex-direction: column;
-    margin: 1em ;
-=======
     border-radius: 0em;
     max-width: 1024px;
 }
@@ -138,7 +104,6 @@ form {
 .activities{
     flex-direction: column;
     margin: 1em 0.5em ;
->>>>>>> CssMobile
 }
 .activities-options {
     flex-flow: row wrap;
