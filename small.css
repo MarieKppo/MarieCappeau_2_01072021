@@ -11,23 +11,29 @@ h3 {
     font-size: 0.9em;
 }
 /******************************* HEADER ******************************/
-.nav img {
+.logo {
     position: absolute;
+    padding: 10px;
 }
 .nav-ul {
     flex-direction: column-reverse;
     align-items: flex-end;
-    align-content: stretch;
+    justify-content: stretch;
+}
+.nav, .ancre-menu {
+    width: 100%;
 }
 .nav ul{
     margin-inline-start: 0em;
 }
 .nav li {
-    align-content: stretch;
+    width: 50%;
+    justify-content: stretch;
     border-bottom: 2px solid #DEEBFF;
+    text-align: center;
 }
 .nav li:hover {
-    padding: 1em 3.5em 1em 2.5em;
+    padding: 2.3em 2.5em 2.5em 2.5em;
     border-bottom: 2px solid #0065FC;
     border-top: 0em ;
 }
@@ -66,7 +72,7 @@ input {
     flex-flow: row wrap;
 }
 .fa-info-circle {
-    margin: 1em;
+    margin: 10px;
 }
 /******************************accommodation section******************************/
 .accommodation {
@@ -78,7 +84,7 @@ input {
 }
 .accommodation-options {
     flex-direction: column;
-    width: 100%;
+    align-items: stretch;
 }
 .showmore {
     margin: 1em 0em 1em 0em;
@@ -90,31 +96,30 @@ input {
     object-fit: cover;
 }
 .popular-accommodation {
+    margin: 0px;
     border-radius: 0em;
 }
-/******************************activities******************************/
-.activities{
-    flex-direction: column;
-    margin: 1em;
+.popular-card-place .stars{
+    margin-top: 40px;
 }
+/******************************activities******************************/
 .activities-options {
-    height: 100%;
+    justify-items: stretch;
+    justify-content: stretch;
 }
 .activities-card-place {
-    height: auto;  
-    width: 100%;
-    margin: 1em 0.5em 1em 0.5em;
+    justify-items: stretch;
+    width: 100%;    
+
 }
 .xl-pic, .m-pic, .s-pic, .xs-pic {
     height: 8em;
 }
 /*******************************Footer*******************************/
 .footer {
-    max-width: 767px;
     margin: 2em 2em 0em 2em;
     display: flex;
     flex-flow: column wrap;
-    justify-items:  center;
 }
 .footer-section {
     width: 100%;
