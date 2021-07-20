@@ -266,14 +266,15 @@ form {
     margin: 0px 10px ;
 }
 .activities-options {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
+    align-items: stretch;
+    height: 400px;
 }
 .activities-options-link {
     margin: 10px;
 }
 .activities-card-place {
-    min-width: 50px;
+    width: 260px;
     border-radius: 1.5em;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
 }
@@ -282,16 +283,16 @@ form {
     object-fit: cover;
 }
 .xl-pic {
-    height: 24em;
+    height: 350px;
 }
 .m-pic {
-    height: 12em;
+    height: 200px;
 }
 .s-pic {
-    height: 10em;
+    height: 100px;
 }
 .xs-pic {
-    height: 8em;
+    height: 80px;
 }
 .activities-card-place h3 {
     padding: 10px;
