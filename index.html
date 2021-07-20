@@ -8,7 +8,7 @@
 	<!--feuilles de style-->
 	<link rel="stylesheet" href="styles.css" /><!--for all screens-->
 	<link rel="stylesheet" media=" all and (max-width: 767px)" href="small.css" /><!--for smartphones-->
-	<link rel="stylesheet" media=" all and (min-width: 767px) and (max-width: 1200px)" href="medium.css" /><!--for tablets-->
+	<!--link rel="stylesheet" media=" all and (min-width: 767px) and (max-width: 1200px)" href="medium.css" /--><!--for tablets-->
 	<!--lien font awesome et polices-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,9 +46,11 @@
 			<form class="research">
 				<div class="research">
 					<i class="fas fa-map-marker-alt"></i>
-					<input name="research" id="research" value="Marseille, France" maxlength='50' size="25">
-					<button class="research-icon-button"><i class="fas fa-search"></i></button>
-					<button class="research-text-button">Rechercher</button>
+					<input name="research" id="research" placeholder="Marseille, France" maxlength='50' size="25">
+					<button class="research-button">
+						<span class="research-button-text">Rechercher</span>
+						<span class="fas fa-search"></span>
+					</button>
 				</div> 
 			</form>
 		</div>
@@ -73,7 +75,7 @@
 			</div>
 		</div>
 <!--info line - à mettre en ligne version desktop-->
-		<div class="filter small">
+		<div class="filter-small">
 			<i class="fas fa-info-circle"></i><p>Plus de 500 logements sont disponibles dans cette ville.</p>
     	</div>
 	</section>
@@ -84,7 +86,7 @@
 			<div class="all-accommodation">
 				<h2>Hébergements à Marseille</h2>
 				<div class="accommodation-options">
-					<a href="#">
+					<a href="#" class="all-accommodation-card-link">
 						<div class="all-accommodation-card">
 							<img src="images/accommodations/Auberge-Cannebiere-marcus-loke.jpg" class="accommodation-pic" alt="Une chambre de l'Auberge de la Cannebière à Marseille"/>
 							<h3>Auberge de la Cannebière</h3>
@@ -92,7 +94,7 @@
 							<div class="stars"><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star grey"></span></div>
 						</div>
 					</a>
-					<a href="#">
+					<a href="#" class="all-accommodation-card-link">
 						<div class="all-accommodation-card">
 							<img src="images/accommodations/Hotel-du-Port-fred-kleber.jpg" class="accommodation-pic" alt="vue d'une chambre de l'Hotel du Port à Marseille" />
 							<h3>Hôtel du port</h3>
@@ -100,14 +102,14 @@
 							<div class="stars"><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span></div>
 						</div>
 					</a>
-					<a href="#">
+					<a href="#" class="all-accommodation-card-link">
 						<div class="all-accommodation-card">
 							<img src="images/accommodations/Hotel-des-Mouettes-reisetopia.jpg" class="accommodation-pic"  alt="chambre de l'Auberge de la Cannebière"/>
 							<h3>Hôtel Les mouettes</h3>
 							<p>Nuit à partir de <strong>76€</strong></p>
 							<div class="stars"><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star grey"></span></div>
 						</div></a>
-					<a href="#">
+					<a href="#" class="all-accommodation-card-link">
 						<div class="all-accommodation-card">
 							<img src="images/accommodations/Hotel-de-la-mer-annie-spratt.jpg" class="accommodation-pic" alt="Chambre de l'hotel de la Mer à Marseille"/>
 							<h3>Hôtel de la mer</h3>
@@ -115,7 +117,7 @@
 							<div class="stars"><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star grey"></span><span class="fas fa-star grey"></span></div>
 						</div>
 					</a>
-					<a href="#">
+					<a href="#" class="all-accommodation-card-link">
 						<div class="all-accommodation-card">
 							<img src="images/accommodations/Auberge-Le-Panier-nicate-lee-kT.jpg" class="accommodation-pic" alt="chambre de l'Auberge le Panier à Marseille"/>
 							<h3>Auberge Le Panier</h3>
@@ -123,7 +125,7 @@
 							<div class="stars"><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star grey"></span></div>
 						</div>
 					</a>
-					<a href="#">
+					<a href="#" class="all-accommodation-card-link">
 						<div class="all-accommodation-card">
 							<img src="images/accommodations/Hotel-Chez-Amina-febrian-zakaria.jpg" class="accommodation-pic" alt="chambre de l'Auberge de la Cannebière"/>
 							<h3>Hôtel chez Amina</h3>
@@ -142,39 +144,43 @@
 				<h2>Les plus populaires </h2><i class="fas fa-chart-line"></i>
 				</div>
 				<div class="popular-options">
-					<a href="#">
-					<div class="popular">
-							<img src="images/accommodations/Hotel-le-Soleil-du-Matin-emile-guillemot.jpg" class="popular-pic" alt="Chambre de l'hotel du soleil du matin à Marseille"/>
-						<div class="popular-card-place"> 	
-							<h3>Hôtel Le soleil du matin</h3>
-							<p>Nuit à partir de <strong>128€</strong></p>
-							<div class="stars"><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span></div>
+					<a href="#" class="popular-link">
+						<div class="popular">
+								<img src="images/accommodations/Hotel-le-Soleil-du-Matin-emile-guillemot.jpg" class="popular-pic" alt="Chambre de l'hotel du soleil du matin à Marseille"/>
+							<div class="popular-card-place"> 	
+								<div class="popular-infos">
+									<h3>Hôtel Le soleil du matin</h3>
+									<p>Nuit à partir de <strong>128€</strong></p>
+								</div>
+								<div class="stars">
+									<span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span>
+								</div>
+							</div>
 						</div>
-					</div>
 					</a>
-					<a href="#">
-					<div class="popular">
-						<div class="popular-pic">
-							<img src="images/accommodations/Au-Coeur-de-Leau-aw-creative.jpg" class="popular-pic" alt="Au Coeur de L'eau chambre d'hôtes à Marseille"/>
+					<a href="#" class="popular-link">
+						<div class="popular">
+							<div class="popular-pic">
+								<img src="images/accommodations/Au-Coeur-de-Leau-aw-creative.jpg" class="popular-pic" alt="Au Coeur de L'eau chambre d'hôtes à Marseille"/>
+							</div>
+							<div class="popular-card-place"> 	
+								<h3>Au coeur de l'eau Chambres d'hôtes</h3>
+								<p>Nuit à partir de <strong>76€</strong></p>
+								<div class="stars"><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star grey"></span></div>
+							</div>
 						</div>
-						<div class="popular-card-place"> 	
-							<h3>Au coeur de l'eau Chambres d'hôtes</h3>
-							<p>Nuit à partir de <strong>76€</strong></p>
-							<div class="stars"><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star grey"></span></div>
-						</div>
-					</div>
 					</a>
-					<a href="#">
-					<div class="popular">
-						<div class="popular-pic">
-							<img src="images/accommodations/Hotel-Tout-bleu-et-tout-blanc-febrian-zakaria.jpg" class="popular-pic" alt="Vue d'une chambre de l'Hotel Tout Bleu et tout blanc à Marseille"/>
+					<a href="#" class="popular-link">
+						<div class="popular">
+							<div class="popular-pic">
+								<img src="images/accommodations/Hotel-Tout-bleu-et-tout-blanc-febrian-zakaria.jpg" class="popular-pic" alt="Vue d'une chambre de l'Hotel Tout Bleu et tout blanc à Marseille"/>
+							</div>
+							<div class="popular-card-place">
+								<h3>Hôtel Tout bleu et Blanc</h3>
+								<p>Nuit à partir de <strong>68€</strong></p>
+								<div class="stars"><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star grey"></span></div>
+							</div>
 						</div>
-						<div class="popular-card-place">
-							<h3>Hôtel Tout bleu et Blanc</h3>
-							<p>Nuit à partir de <strong>68€</strong></p>
-							<div class="stars"><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star"></span><span class="fas fa-star grey"></span></div>
-						</div>
-					</div>
 					</a>
 				</div>
 			</div>
