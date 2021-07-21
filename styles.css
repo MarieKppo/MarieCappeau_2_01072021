@@ -107,7 +107,10 @@ form {
     margin-top: 0em;
     color: #ffffff;
 }
-.fa-search{
+.research-button .fas {
+    display: none;
+} 
+.fa-search {
     display: none;
     color: #F2F2F2;
 }
