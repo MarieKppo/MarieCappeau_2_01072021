@@ -15,6 +15,9 @@ form {
 .research-button-text {
     display: none;
 }
+.research-button .fas {
+    display: flex;
+} 
 .fa-search{
     display: flex;
 }
