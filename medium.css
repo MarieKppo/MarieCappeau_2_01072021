@@ -28,22 +28,33 @@ form {
 .accommodation {
     flex-direction: column-reverse;
     justify-content: space-between;
-    margin: 1em 0em;
+    margin: 5px 0px;
 }
 .all-accommodation {
+    padding: 0px;
     border-radius: 0em;
-    max-width: 1024px;
     background-color: #ffffff;
 }
-.all-accommodation-card{
-    margin: 0.5em;
-}
 .accommodation h2, .showmore {
-    padding: 0.5em 0em 1em 2em; 
+    padding: 5px 20px; 
 }
 .popular-accommodation {
     border-radius: 0em;
-    max-width: 1024px;
+    margin: 0px;
+    padding: 10px 5px;
+}
+.popular-title {
+    justify-content: stretch;
+}
+.popular-options {
+    flex-direction: row;
+}
+.popular-link {
+    margin: 5px;
+    flex-basis: 33%;
+}
+.popular-card-place .stars{
+    margin-top: 2px;
 }
 /******************************activities******************************/
 .activities{

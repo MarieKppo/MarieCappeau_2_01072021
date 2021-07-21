@@ -208,7 +208,7 @@ form {
     border-radius: 1.5em;
 }
 .popular-link {
-    margin: 10px 25px 10px 25px;
+    margin: 10px 25px;
 }
 .popular-accommodation {
     flex-flow: column nowrap;
