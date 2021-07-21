@@ -266,15 +266,19 @@ form {
     margin: 0px 10px ;
 }
 .activities-options {
-    flex-flow: column wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
     align-items: stretch;
-    height: 400px;
+    align-content: space-between;
+    justify-content: space-evenly;
+    margin: 0px;
+    height: 420px;
 }
 .activities-options-link {
+    width: 18em;
     margin: 10px;
 }
 .activities-card-place {
-    width: 260px;
     border-radius: 1.5em;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
 }
@@ -283,16 +287,16 @@ form {
     object-fit: cover;
 }
 .xl-pic {
-    height: 350px;
+    height: 345px;
 }
 .m-pic {
-    height: 200px;
+    height: 135px;
 }
 .s-pic {
-    height: 100px;
+    height: 160px;
 }
 .xs-pic {
-    height: 80px;
+    height: 110px;
 }
 .activities-card-place h3 {
     padding: 10px;
