@@ -311,10 +311,11 @@ form {
 .footer {
     margin: 0px 10px;
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: stretch;
 }
 .footer-section {
+    flex-wrap: wrap;
     width: 30%;
 }
 .footer-section p {
