@@ -104,12 +104,15 @@ input {
 }
 /******************************activities******************************/
 .activities-options {
-    justify-items: stretch;
-    justify-content: stretch;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.activities-options-link {
+    margin: 10px 0px;
+    width: 100%;
 }
 .activities-card-place {
     justify-items: stretch;
-    width: 100%;    
 }
 .xl-pic, .m-pic, .s-pic, .xs-pic {
     height: 8em;
