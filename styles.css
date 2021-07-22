@@ -19,7 +19,7 @@ ul {
     padding: 0em;
 }
 h1 {
-    margin: 0.5em 0em 0.3em 0em;
+    margin: 0.5em 0em 0em 0em;
     color: black;
     font-size: 2em;
 }
@@ -83,6 +83,7 @@ button {
 }
 .title {
     flex-direction: column;
+    margin-bottom: 10px;
 }
 /*****************************Reseach section*****************************/
 form {
@@ -147,6 +148,7 @@ form {
     flex-flow: row nowrap;
     justify-items: flex-start;
     align-items: baseline;
+    margin: 15px 0px;
 }
 .fa-info-circle {
     color: #ffffff;
@@ -312,7 +314,7 @@ form {
     background-color: #F2F2F2 ;
 }
 .footer {
-    margin: 0px 10px;
+    margin: 0px 20px;
     display: flex;
     flex-direction: row;
     justify-content: stretch;
