@@ -1,5 +1,8 @@
  /*******************************mise en page des blocs du site et du texte*******************************/
- .container {
+body {
+    padding: 0px;
+}
+.container {
     flex-direction: column;
     width: auto;
     margin: 0px;
@@ -84,6 +87,7 @@ input {
 .all-accommodation {
     background-color: #fff;
     border-radius: 0em;
+    flex-grow: 1;
 }
 .accommodation-options {
     flex-direction: column;
@@ -101,6 +105,7 @@ input {
 .popular-accommodation {
     margin: 0px;
     border-radius: 0em;
+    flex-grow: 1;
 }
 .popular-card-place .stars{
     margin-top: 40px;
