@@ -42,6 +42,9 @@ form {
     border-radius: 0em;
     background-color: #ffffff;
 }
+.all-accommodation-card-link {
+    flex-basis: 47%;
+}
 .accommodation h2, .showmore {
     padding: 5px 20px; 
 }
@@ -69,7 +72,7 @@ form {
     margin: 10px 5px;
 }
 .activities h2 {
-    padding-left: 10px;
+    padding-left: 15px;
 }
 .activities-options {
     flex-direction: row;

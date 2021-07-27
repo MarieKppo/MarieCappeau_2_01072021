@@ -88,7 +88,7 @@ button {
 }
 /*****************************Reseach section*****************************/
 form {
-    margin: 5px;
+    margin: 20px;
 }
 .fa-map-marker-alt{
     background-color: #F2F2F2;
@@ -133,6 +133,8 @@ form {
     background-color: #ffffff;
     margin: 1em 1em 1em 1em;
     padding: 0em 1em 0em 0em;
+    font-weight: 600;
+    font-size: 0.9em;
 }
 .filter button i {
     width: 15px;
@@ -140,6 +142,7 @@ form {
     padding: 1.2em;
     margin: 0em 0.5em 0em -1em;
     background-color: #DEEBFF ;
+
 }
 .filter button:hover {
     background-color: #0065FC;
@@ -313,6 +316,7 @@ form {
 /*******************************Footer*******************************/
 #footer {
     background-color: #F2F2F2 ;
+    padding: 0px 20px;
 }
 .footer {
     margin: 0px 20px;

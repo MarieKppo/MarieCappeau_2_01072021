@@ -9,10 +9,7 @@ body {
     padding: 0px;
 }
 h1 {
-    font-size: 1.7em;
-}
-h3 {
-    font-size: 0.9em;
+    font-size: 1.6em;
 }
 /******************************* HEADER ******************************/
 .logo {
@@ -46,7 +43,7 @@ h3 {
 }
 .title{
     position:relative;
-    margin: 5px;
+    margin: 10px 10px 10px 20px;
 }
 /*****************************Reseach section*****************************/
 .research-button-text{
@@ -73,7 +70,7 @@ input {
     margin: 0em;
 }
 .filter-content {
-    margin: 10px;
+    margin: 15px;
 }
 .filter {
     flex-flow: row wrap;
@@ -115,6 +112,9 @@ input {
 .activities-options {
     flex-wrap: wrap;
     height: 100%;
+}
+.activities h2 {
+    padding-left: 15px;
 }
 .activities-options-link {
     margin: 10px 0px;
