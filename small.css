@@ -1,4 +1,7 @@
  /*******************************mise en page des blocs du site et du texte*******************************/
+body {
+    padding: 0px;
+}
 .container {
     flex-direction: column;
     width: auto;
